@@ -1,0 +1,39 @@
+<div id="proyects" class="row">
+    <div class="div1">
+      <div class="boton">
+        <h2>Editar About me</h2>
+      </div>
+      <div id="education">
+        <div class="education-block" *ngIf="about">
+          <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+            <div class="form-group">
+              <label for="nombreE"><p>Título</p></label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombreE"
+                name="nombreE"
+                [(ngModel)]="about.nombreE"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="descripcionE"><p>Acerca de</p></label>
+              <input
+                type="text"
+                class="form-control"
+                id="descripcionE"
+                name="descripcionE"
+                [(ngModel)]="about.descripcionE"
+              />
+            </div>
+            <button class="btn btn-primary">
+              <i class="bi bi-check2"></i>
+            </button>
+          </form>
+          <img class="imagenes1"  src="../../../assets/About.jpg">
+        </div>
+      </div>
+    </div>
+  </div>
+  

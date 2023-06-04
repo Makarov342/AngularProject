@@ -1,0 +1,120 @@
+.row{
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+}
+.div1{
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3);
+    
+  }
+
+  
+  h2{
+    text-align: center;
+    color: rgb(255, 253, 253);
+  }
+  .boton{
+    text-align: center;
+  }
+ 
+  .imagenes1{
+    width: 35%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   
+  }
+ 
+  
+  #education {
+    padding: 50px 15px 20px 15px;
+    
+    text-align: center;
+    
+  }
+  
+  #education h2 {
+    color: #fafafa;
+    margin-bottom: 50px
+  }
+  
+  .education-block {
+    background-color: rgb(236, 199, 225);
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    padding: 15px;
+    border: 1px solid #c78fc7;
+    text-align: center;
+    box-shadow:10px 10px 30px rgb(209, 75, 243);
+    border-radius: 14px;
+    box-shadow: 0px 3px 12px 0px #ccc;
+    border: 1px solid transparent;
+  }
+  
+  .education-block h4 {
+    font-weight: 500;
+    float: center;
+    margin: 0;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+  
+
+  
+  .education-block p {
+    color: #202020;
+    clear: both;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  .education-block p,
+  .education-block ul {
+    margin: 0;
+    color: #74808a;
+    font-size: 0.9em
+  }
+  
+  .education-block ul {
+    padding: 0 0 0 15px
+  }
+  
+  h2{
+    display: inline;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+
+  button{
+    background: rgb(246, 147, 250);
+    color:white;
+    text-decoration: none;
+    border: 2px solid  transparent;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: .4s;
+    margin-top: 10px;
+}
+img{
+  border-radius: 30px;
+}
+
+button:hover{
+    background:transparent;
+    border:2px solid rgb(151, 104, 160);
+    cursor: pointer;
+}
+ 
+  @media (max-width: 575.98px) { 
+    h1{font-size:40px; line-height:normal;}
+    .products-details h2{font-size: 40px;}
+    .armar{min-width: unset; padding: 40px ;}
+  }
+  @media (min-width: 768px) and (max-width: 991.98px) { 
+    .products-details h2 { font-size: 30px; }
+    .armar { min-width: unset; padding: 40px 20px;}
+  }

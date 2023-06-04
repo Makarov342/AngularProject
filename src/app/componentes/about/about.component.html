@@ -1,0 +1,22 @@
+<div id="aboutme" class="row">
+    <section class="about">
+        <div class="main" *ngIf="isLogged">
+        <img  src="../../../assets/foto-perfil.png" alt="foto de perfil">
+        <div class="about-text" *ngFor="let About of about">
+            <h1>{{persona.nombre}} {{persona.apellido}}</h1>
+            <h5>{{About.nombreE}}</h5>
+            <p>{{About.descripcionE}}</p>
+             
+           
+            <button  routerLink="/editabout/{{About.id}}"><i class="bi bi-pencil"> Editar</i></button>
+            <button routerLink="/contact" ><i class="bi bi-person-lines-fill"></i> Contact </button>
+        </div>
+       
+       
+       
+        </div>
+    </section>
+</div>
+
+
+    

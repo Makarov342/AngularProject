@@ -1,0 +1,25 @@
+<div id="proyects" class="row">
+    <div class="div1">
+      <div class="boton">
+        <h2>Agregar experiencia</h2>
+      </div>
+      <div id="education">
+        <div class="education-block" >
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE"><p>Nombre de la empresa</p></label>
+                    <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE"><p>Descripcion de la tarea</p></label>
+                    <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
+                </div>
+                <button class="btn btn-primary">
+                    <i class="bi bi-check2"></i>
+                </button>
+            </form>
+          <img class="imagenes1"  src="../../../assets/Experiencia.png">
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,60 @@
+<div class="row">
+  <body *ngIf="isLogged">
+    <div id="exp" class="container">
+      <main class="fox">
+        <!-- ***  Education Section Starts ***  -->
+        <section class="col">
+          <header class="title">
+            <h2>Education</h2>
+          </header>
+          <div class="boton">
+            <button *ngIf="isLogged"><i class="bi bi-plus-circle" routerLink="/newedu" > Agregar</i></button>
+          </div>
+
+          <div class="contents">
+            <div class="box" *ngFor="let Educacion of educacion">
+              
+              <h3>{{Educacion.nombreE}}</h3>
+              <p>
+                {{Educacion.descripcionE}}
+              </p>
+              <div *ngIf="isLogged" class="boton2">
+                <button class="bedit" routerLink="/edit/{{Educacion.id}}"><i class="bi bi-pencil"></i></button>
+                <button class="bdelete"  (click)="delete2(Educacion.id)"><i class="bi bi-x-circle"></i></button>
+              </div>
+            </div>
+
+            
+          </div>
+        </section>
+        <!--  *** Education Section Ends  ***  -->
+
+        <!-- ***  Experience Section Starts ***  -->
+        <section id="education" class="col">
+          <header class="title">
+            <h2>Experience</h2>
+          </header>
+          <div class="boton">
+            <button  routerLink="/newexp" *ngIf="isLogged"><i class="bi bi-plus-circle"> Agregar</i></button>
+          </div>
+
+          <div class="contents">
+            <div class="box" *ngFor="let Experiencia of expe">
+              
+              <h3>{{Experiencia.nombreE}}</h3>
+              <p>
+                {{Experiencia.descripcionE}}
+              </p>
+              <div class="boton2" *ngIf="isLogged">
+                <button class="bedit" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil"></i></button>
+                <button class="bdelete" (click)="delete(Experiencia.id)"><i class="bi bi-x-circle"></i></button>
+              </div>
+            </div>
+            <div class="box1"></div>
+          </div>
+        </section>
+        <!--  *** Experience Section Ends  ***  -->
+      </main>
+    </div>
+  </body>
+</div>
