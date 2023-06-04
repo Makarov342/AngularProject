@@ -14,6 +14,8 @@ Deployment on Google's Firebase
 
 To see the project deployed on Google Firebase, please visit: https://proyectovj-6c736.web.app/
 
+Note: The login process may experience delays due to the backend being hosted on a render-free option, which may have limited resources. Please be patient if the login takes longer than expected.
+
 To run this Angular project locally, follow these steps:
 
 Clone the repository: git clone [repository URL]
