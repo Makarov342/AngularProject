@@ -1,27 +1,51 @@
-# ProyectoFinal
+# Angular Project - README
+# Introduction
+Welcome to the README file for the Angular project! This project is a portfolio web application built using Angular version 15.0.3. It showcases various sections such as "about me," "education," "experience," "skills," and "projects." The application allows users to navigate through these sections, edit content (with appropriate permissions), and interact with the backend through corresponding services.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
+# Features
+Single Page Application (SPA) using Angular routing
+Bootstrap tools for CSS styling
+Navigation bar for easy section navigation
+User authentication and login functionality
+CRUD (Create, Read, Update, Delete) operations for content editing
+Integration with backend using HTTP requests
+Deployment on Google's Firebase
+# Installation and Setup
 
-## Development server
+To see the project deployed on Google Firebase, please visit: https://proyectovj-6c736.web.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+To run this Angular project locally, follow these steps:
 
-## Code scaffolding
+Clone the repository: git clone [repository URL]
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Install project dependencies: npm install
 
-## Build
+Start the development server: ng serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Open your browser and navigate to http://localhost:4200
 
-## Running unit tests
+Make sure you have Node.js and the Angular CLI installed on your system before proceeding with the installation.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Project Structure
+The project follows a structured organization with key components and files. Here's a brief overview:
 
-## Running end-to-end tests
+src/app/components: Contains the various sections of the portfolio (about me, education, experience, skills, projects).
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+src/app/services: Includes services that handle HTTP requests and interact with the backend.
 
-## Further help
+src/app/app-routing.module.ts: Configures the application routes and associated components.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+src/app/token.service.ts: Handles user authentication and token management.
+
+# Backend and Deployment
+The backend of this project is built with the Spring Boot framework in Java version 18. It utilizes controllers to handle HTTP requests and service classes to perform CRUD operations. Entity classes define the structure and data for each component's table, with a relational MySQL database as the data store.
+
+The backend repository can be found here: https://github.com/Makarov342/backendArgPro
+
+The deployment of the frontend is done on Google's Firebase, providing a scalable and secure hosting solution.
+
+# Further Assistance and Feedback
+If you have any questions, suggestions, or feedback regarding this Angular project, please feel free to reach out to me. I am open to further discussions and would appreciate any input to enhance the application.
+
+Thank you for your interest in this project, and I look forward to your valuable feedback.
+
